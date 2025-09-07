@@ -83,37 +83,65 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="container my-5" data-aos="fade-up">
-    <h2 class="section-title text-center mb-4">Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card project-card p-4">
-          <h5>Bias-Remediated EBM Model</h5>
-          <p>Built interpretable models for fairness in mortgage lending using HMDA data with SHAP and AIR.</p>
-          <div class="project-tags"><span>Python</span><span>EBM</span><span>SHAP</span><span>Fairness</span></div>
-          <a href="https://github.com/tsjmaryam" class="btn btn-outline-light btn-sm mt-3" target="_blank">View GitHub</a>
+<!-- Projects -->
+<section id="projects" class="container my-5" data-aos="fade-up">
+  <h2 class="section-title text-center mb-4">Projects</h2>
+  <div class="row g-4">
+
+    <!-- Fair Lending -->
+    <div class="col-md-6">
+      <div class="card project-card p-4 shadow-sm rounded-3">
+        <h5>Fair Lending Analysis Using GBM & EBM</h5>
+        <p>Built interpretable models to detect bias in mortgage approvals and ensure compliance with fair lending practices; enhanced interpretability with SHAP and AIR, preserving accuracy.</p>
+        <div class="project-tags">
+          <span>Python</span><span>GBM</span><span>EBM</span><span>SHAP</span><span>Fairness</span>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card project-card p-4">
-          <h5>Capital Bikeshare Forecasting</h5>
-          <p>Developed predictive models for bike demand using LASSO and Ridge regression; achieved 85% accuracy.</p>
-          <div class="project-tags"><span>Python</span><span>LASSO</span><span>Ridge</span><span>Forecasting</span></div>
-          <a href="https://github.com/tsjmaryam" class="btn btn-outline-light btn-sm mt-3" target="_blank">View GitHub</a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card project-card p-4">
-          <h5>Iowa Liquor Market Analysis</h5>
-          <p>Analyzed Iowa liquor sales on AWS & PostgreSQL; built Power BI dashboards for retail strategy.</p>
-          <div class="project-tags"><span>SQL</span><span>AWS</span><span>Power BI</span><span>Data Modeling</span></div>
-          <a href="https://github.com/tsjmaryam" class="btn btn-outline-light btn-sm mt-3" target="_blank">View GitHub</a>
-        </div>
+        <a href="https://github.com/tsjmaryam/CECL_R" class="btn btn-outline-dark btn-sm mt-3" target="_blank">View GitHub</a>
       </div>
     </div>
+
+    <!-- Capital Bikeshare -->
+    <div class="col-md-6">
+      <div class="card project-card p-4 shadow-sm rounded-3">
+        <h5>Capital Bikeshare Demand Forecasting</h5>
+        <p>Developed and evaluated predictive models to forecast daily bike usage and optimize fleet distribution; achieved 85% accuracy, reducing operational inefficiencies.</p>
+        <div class="project-tags">
+          <span>Python</span><span>LASSO</span><span>Ridge</span><span>Forecasting</span><span>Regression</span>
+        </div>
+        <a href="https://github.com/tsjmaryam/Capital-Bikeshare" class="btn btn-outline-dark btn-sm mt-3" target="_blank">View GitHub</a>
+      </div>
+    </div>
+
+    <!-- Iowa Liquor -->
+    <div class="col-md-6">
+      <div class="card project-card p-4 shadow-sm rounded-3">
+        <h5>Iowa Liquor Sales Analysis – Market Entry</h5>
+        <p>Executed data modeling and analysis on AWS using PostgreSQL, Python, and Power BI; conducted market analysis to guide a retail client’s expansion into Iowa.</p>
+        <div class="project-tags">
+          <span>AWS</span><span>PostgreSQL</span><span>Python</span><span>Power BI</span><span>Data Modeling</span>
+        </div>
+        <a href="https://github.com/tsjmaryam/Iowa-Liquor-Sales" class="btn btn-outline-dark btn-sm mt-3" target="_blank">View GitHub</a>
+      </div>
+    </div>
+
+    <!-- Federal Reserve CECL -->
+    <div class="col-md-6">
+      <div class="card project-card p-4 shadow-sm rounded-3">
+        <h5>Federal Reserve Bank of St. Louis – CECL Tool</h5>
+        <p>Designed a prototype for a Current Expected Credit Loss (CECL) modeling tool to support financial institutions with forward-looking credit risk estimation.</p>
+        <div class="project-tags">
+          <span>Credit Risk</span><span>Python</span><span>CECL</span><span>Financial Modeling</span>
+        </div>
+        <a href="https://github.com/tsjmaryam" class="btn btn-outline-dark btn-sm mt-3" target="_blank">View GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   </section>
 
-  <!-- Tech Stack -->
+ <!-- Tech Stack -->
 <section id="skills" class="container my-5 text-center" data-aos="fade-up">
   <h2 class="section-title mb-4">Tech Stack</h2>
   <div class="row g-4">
@@ -123,76 +151,73 @@
       <div class="skill-card p-4">
         <h5><i class="fas fa-code"></i> Languages</h5>
         <div class="skill-tags">
-          <span>Python</span>
+          <span>Python (pandas, SciPy, scikit-learn, TensorFlow, Statsmodels)</span>
           <span>R</span>
-          <span>SQL (PostgreSQL, MySQL)</span>
+          <span>SQL (PostgreSQL, SparkSQL, MySQL)</span>
           <span>HTML/CSS</span>
-          <span>JavaScript (basic)</span>
         </div>
       </div>
     </div>
 
-    <!-- Machine Learning & Analytics -->
+    <!-- Machine Learning & Statistics -->
     <div class="col-md-6">
       <div class="skill-card p-4">
-        <h5><i class="fas fa-brain"></i> ML & Analytics</h5>
+        <h5><i class="fas fa-brain"></i> Machine Learning & Statistics</h5>
         <div class="skill-tags">
-          <span>Scikit-learn</span>
-          <span>XGBoost</span>
-          <span>LightGBM</span>
-          <span>EBM (Explainable Boosting Machine)</span>
-          <span>SHAP / InterpretML</span>
-          <span>PCA</span>
+          <span>Regression (LASSO, Ridge, ElasticNet)</span>
+          <span>Classification</span>
           <span>Clustering</span>
           <span>Forecasting</span>
+          <span>PCA</span>
+          <span>ARIMA</span>
+          <span>Random Forest</span>
+          <span>XGBoost</span>
+          <span>LightGBM</span>
+          <span>SVM</span>
+          <span>EBM (Explainable Boosting Machine)</span>
+          <span>SHAP / PDP</span>
+          <span>A/B Testing</span>
+          <span>Bias Mitigation & Fairness Testing</span>
+          <span>Credit Risk Modeling</span>
         </div>
       </div>
     </div>
 
-    <!-- AI & Applications -->
+    <!-- Tools & Cloud -->
     <div class="col-md-6">
       <div class="skill-card p-4">
-        <h5><i class="fas fa-robot"></i> AI & Applications</h5>
+        <h5><i class="fas fa-tools"></i> Tools & Cloud</h5>
         <div class="skill-tags">
-          <span>LangChain</span>
-          <span>Streamlit</span>
-          <span>OpenAI API</span>
-          <span>Hugging Face</span>
-          <span>RAG (Retrieval-Augmented Generation)</span>
-          <span>Flask</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cloud & Visualization -->
-    <div class="col-md-6">
-      <div class="skill-card p-4">
-        <h5><i class="fas fa-cloud"></i> Cloud & Visualization</h5>
-        <div class="skill-tags">
+          <span>Apache Spark</span>
           <span>AWS</span>
+          <span>ETL Pipelines</span>
+          <span>PrecisionTree</span>
+          <span>@Risk</span>
+          <span>Excel (Advanced Modeling)</span>
+          <span>Git & GitHub</span>
+          <span>Jupyter Notebook</span>
+          <span>VS Code</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visualization -->
+    <div class="col-md-6">
+      <div class="skill-card p-4">
+        <h5><i class="fas fa-chart-line"></i> Visualization</h5>
+        <div class="skill-tags">
           <span>Power BI</span>
           <span>Tableau</span>
           <span>SAS Visual Analytics</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tools -->
-    <div class="col-md-6">
-      <div class="skill-card p-4">
-        <h5><i class="fas fa-tools"></i> Tools</h5>
-        <div class="skill-tags">
-          <span>Git & GitHub</span>
-          <span>VS Code</span>
-          <span>Jupyter Notebook</span>
+          <span>ggplot2</span>
           <span>Google Analytics</span>
-          <span>Excel (Advanced, VBA)</span>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+
 
   </section>
   
