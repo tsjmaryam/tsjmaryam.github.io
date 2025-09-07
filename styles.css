@@ -211,36 +211,39 @@ body {
   transition: color 0.3s ease;
 }
 
-.social-icon:hover {
-  color: #ffffff;
+/* Project cards */
+.project-card {
+  background: #111827; /* dark slate background */
+  color: #f9fafb;      /* light text */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.project-card a.github-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 224, 255, 0.2);
+}
+
+/* Project tags (skills/tech) */
+.project-tags span {
+  display: inline-block;
+  background: rgba(0, 224, 255, 0.1);
   border: 1px solid #00e0ff;
   color: #00e0ff;
-  font-weight: 500;
-  padding: 6px 14px;
-  margin-top: 15px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  margin: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.project-card a.github-btn::before {
-  content: ""; /* GitHub FontAwesome icon (if using FA) */
-  font-family: "Font Awesome 5 Brands";
-  font-size: 1rem;
-}
-
-.project-card a.github-btn:hover {
+.project-tags span:hover {
   background: #00e0ff;
   color: #0a0a0a;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0, 224, 255, 0.4);
 }
 
