@@ -215,56 +215,32 @@ body {
   color: #ffffff;
 }
 
-/* Make GitHub button more visible */
-.project-card a.github-btn {
-  display: inline-block;
-  background: #00e0ff; /* bright cyan for contrast */
-  color: #0a0a0a;      /* dark text for readability */
-  font-weight: bold;
-  padding: 12px 24px;
-  margin-top: 15px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 224, 255, 0.3);
-}
-
-.project-card a.github-btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #00e0ff, #00b4d8); /* gradient for depth */
-  color: #0a0a0a;
-  font-weight: bold;
-  padding: 10px 28px;
-  margin-top: 20px;
-  border-radius: 50px; /* pill shape */
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 224, 255, 0.4);
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-}
-
 .project-card a.github-btn {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background: #0a0a0a;
+  gap: 8px;
+  background: transparent;
   border: 1px solid #00e0ff;
-  border-radius: 50%;
   color: #00e0ff;
-  font-size: 18px;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  padding: 6px 14px;
   margin-top: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.project-card a.github-btn::before {
+  content: ""; /* GitHub FontAwesome icon (if using FA) */
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1rem;
 }
 
 .project-card a.github-btn:hover {
   background: #00e0ff;
   color: #0a0a0a;
-  box-shadow: 0 4px 12px rgba(0, 224, 255, 0.5);
-  transform: scale(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 224, 255, 0.4);
 }
 
