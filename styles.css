@@ -247,3 +247,20 @@ body {
   color: #0a0a0a;
 }
 
+.skill-tags span {
+  display: inline-block;
+  background: rgba(0, 224, 255, 0.08);
+  border: 1px solid #00e0ff;
+  color: #00e0ff;
+  font-size: 0.85rem;
+  margin: 4px 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;  /* prevent breaking inside a tag */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.skill-tags span:hover {
+  background: #00e0ff;
+  color: #0a0a0a;
+}
